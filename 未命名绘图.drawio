@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-11T07:41:04.564Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="8424zJ7zHLk4OW5h-oYb" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-11T09:42:36.305Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="SODIg9fLvIWlZaSsbE3O" version="20.3.0" type="github">
   <diagram id="v4NcV1EOcFVTRIT4R_Up" name="第 1 页">
     <mxGraphModel dx="1865" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -65,13 +65,37 @@
           <mxGeometry x="830" y="610" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="l84PdnCawKySDigee48M-22" value="connect(this, SIGNAL(btnPressed(EM_TVM_UI_STATUS,QString,int,EM_TVM_UI_STATUS)), m_pMachine,&#xa;            SLOT(handleBtnPress(EM_TVM_UI_STATUS,QString,int,EM_TVM_UI_STATUS)), Qt::QueuedConnection);" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="40" width="560" height="80" as="geometry" />
+          <mxGeometry x="160" y="40" width="560" height="80" as="geometry" />
         </mxCell>
         <mxCell id="l84PdnCawKySDigee48M-23" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="369.5" y="140" as="sourcePoint" />
             <mxPoint x="369.5" y="240" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-24" value="TVMBase *m_FornCH[UI_FORM_COUNT];" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="870" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-25" value="#include &quot;uimanagement.h&quot;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="830" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-26" value="//更新当前显示界面&lt;br&gt;void UIManagement::refreshView(EM_TVM_UI_STATUS emStatus, EM_TVM_UI_REFRESH_TYPE emType, QString btnName, int iValue, int bReflushAll)&lt;br&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="315" y="910" width="560" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-27" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.92;dx=35.4;notch=0;" vertex="1" parent="1">
+          <mxGeometry x="315" y="970" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-28" value="if(emStatus&gt;=0 &amp;&amp; emStatus &lt; UI_FORM_COUNT)&#xa;        {&#xa;            m_FornCH[emStatus]-&gt;refreshUI(emType,btnName,iValue);&#xa;            if(bReflushAll)&#xa;                m_FornEN[emStatus]-&gt;refreshUI(emType,btnName,iValue);&#xa;        }" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="960" width="400" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-29" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-40" y="685" as="sourcePoint" />
+            <mxPoint x="300" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-30" value="//状态机通知界面显示某一个界面&#xa;    connect(m_pMachine, SIGNAL(setView(int)), this, SLOT(showView(int)), Qt::QueuedConnection);" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="315" y="1099" width="560" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
