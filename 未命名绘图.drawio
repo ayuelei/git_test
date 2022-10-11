@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-11T07:18:34.126Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="omsRn_bNAP1h1tc251aJ" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-11T07:21:54.265Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="tq-xo8qH35oTnFvF68cE" version="20.3.0" type="github">
   <diagram id="v4NcV1EOcFVTRIT4R_Up" name="第 1 页">
     <mxGraphModel dx="1038" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -21,6 +21,9 @@
         </mxCell>
         <mxCell id="l84PdnCawKySDigee48M-8" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;shape=mxgraph.arrows2.arrow;dy=0.36;dx=32.4;notch=0;" vertex="1" parent="1">
           <mxGeometry x="240" y="370" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-10" value="/*! \fn&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; bool EventStateMachine(EM_EVENT_TYPE emType, ST_UI_EVENT stUIEvent, const char *pJsonData, EM_TVM_UI_STATUS emInStatus, EM_TVM_UI_STATUS *emOutStatuss);&lt;/span&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \brief 		从core收到数据后执行状态机。&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; emType入口类型&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; 	emEvent 入口事件&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; stIpcMsgData IPC数据&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; 	emInStatus 入口状态&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[out]	emOutStatus 执行状态机后状态&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \return		bool :true 表示已处理该时间&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \author 		薛峰&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \date 		2014－10－19&lt;br&gt;&amp;nbsp; &amp;nbsp; */" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="390" width="560" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
