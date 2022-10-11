@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-11T07:21:54.265Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="tq-xo8qH35oTnFvF68cE" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-11T07:41:04.564Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="8424zJ7zHLk4OW5h-oYb" version="20.3.0" type="github">
   <diagram id="v4NcV1EOcFVTRIT4R_Up" name="第 1 页">
-    <mxGraphModel dx="1038" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1865" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -23,7 +23,55 @@
           <mxGeometry x="240" y="370" width="60" height="20" as="geometry" />
         </mxCell>
         <mxCell id="l84PdnCawKySDigee48M-10" value="/*! \fn&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; bool EventStateMachine(EM_EVENT_TYPE emType, ST_UI_EVENT stUIEvent, const char *pJsonData, EM_TVM_UI_STATUS emInStatus, EM_TVM_UI_STATUS *emOutStatuss);&lt;/span&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \brief 		从core收到数据后执行状态机。&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; emType入口类型&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; 	emEvent 入口事件&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; stIpcMsgData IPC数据&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; 	emInStatus 入口状态&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[out]	emOutStatus 执行状态机后状态&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \return		bool :true 表示已处理该时间&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \author 		薛峰&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \date 		2014－10－19&lt;br&gt;&amp;nbsp; &amp;nbsp; */" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="320" y="390" width="560" height="180" as="geometry" />
+          <mxGeometry x="315" y="400" width="560" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-11" value="bool StateMachine::ExeStateUIEvent(ST_UI_EVENT stUIEvent, EM_TVM_UI_STATUS emInStatus, EM_TVM_UI_STATUS *emOutStatus)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="610" width="560" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="450" as="sourcePoint" />
+            <mxPoint x="160" y="595" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-13" value="//处理UI按钮跳转" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="590" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-15" value="if(stUIEvent.objectName == &quot;BtnLarge&quot;)//放大按钮" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-110" y="660" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-16" value="&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;例如:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="640" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="850" y="470" as="sourcePoint" />
+            <mxPoint x="953" y="610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="900" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-18" value="string strCommand = m_pVirtulUI-&gt;GetCommand(pJsonData)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="875" y="610" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-19" value="if(0 == strcmp(strCommand.c_str(),CORE_TO_VIRTUAL_UI_COMMAND_HEARTBEAT))      //心跳" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="875" y="635" width="560" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-20" value="&lt;br&gt;例如:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="825" y="620" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-21" value="先" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="830" y="610" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-22" value="connect(this, SIGNAL(btnPressed(EM_TVM_UI_STATUS,QString,int,EM_TVM_UI_STATUS)), m_pMachine,&#xa;            SLOT(handleBtnPress(EM_TVM_UI_STATUS,QString,int,EM_TVM_UI_STATUS)), Qt::QueuedConnection);" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="40" width="560" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="l84PdnCawKySDigee48M-23" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="369.5" y="140" as="sourcePoint" />
+            <mxPoint x="369.5" y="240" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
