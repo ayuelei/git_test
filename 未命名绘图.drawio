@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-14T06:15:29.693Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="eL8AWU4JGkqKTArAuEIl" version="20.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-14T09:47:25.906Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="9HmPMUD9QzhPpOayUuib" version="20.4.0" type="github">
   <diagram id="v4NcV1EOcFVTRIT4R_Up" name="第 1 页">
-    <mxGraphModel dx="2041" dy="641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1865" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -100,10 +100,10 @@
         <mxCell id="l84PdnCawKySDigee48M-35" value="EventStateMachine(EM_EVENT_TYPE_UI,  stUI,  NULL, m_emCurrentStatus,&amp;m_emStatusReturn );" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="300" y="345" width="560" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="ETHRLqlxkjIjxUWYg9xR-1" value="//状态机通知界面收到IPC消息 刷新某一界面&#xa;    qRegisterMetaType&lt;EM_TVM_UI_STATUS&gt;(&quot;EM_TVM_UI_STATUS&quot;);&#xa;    qRegisterMetaType&lt;EM_TVM_UI_REFRESH_TYPE&gt;(&quot;EM_TVM_UI_REFRESH_TYPE&quot;);&#xa;&#xa;&#xa;    connect(m_pMachine, SIGNAL(refreshView(EM_TVM_UI_STATUS,EM_TVM_UI_REFRESH_TYPE,QString,int,int)),&#xa;            this, SLOT(refreshView(EM_TVM_UI_STATUS,EM_TVM_UI_REFRESH_TYPE,QString,int,int)), Qt::QueuedConnection);" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="ETHRLqlxkjIjxUWYg9xR-1" value="//状态机通知界面收到IPC消息 刷新某一界面&#xa;    qRegisterMetaType&lt;EM_TVM_UI_STATUS&gt;(&quot;EM_TVM_UI_STATUS&quot;);&#xa;    qRegisterMetaType&lt;EM_TVM_UI_REFRESH_TYPE&gt;(&quot;EM_TVM_UI_REFRESH_TYPE&quot;);&#xa;&#xa;&#xa;    connect(m_pMachine, SIGNAL(refreshView(EM_TVM_UI_STATUS,EM_TVM_UI_REFRESH_TYPE,QString,int,int)),&#xa;            this, SLOT(refreshView(EM_TVM_UI_STATUS,EM_TVM_UI_REFRESH_TYPE,QString,int,int)), Qt::QueuedConnection);" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="310" y="910" width="560" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="ETHRLqlxkjIjxUWYg9xR-2" value="void UIManagement::showView(int viewIndex)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="ETHRLqlxkjIjxUWYg9xR-2" value="void UIManagement::showView(int viewIndex)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-350" y="1000" width="280" height="40" as="geometry" />
         </mxCell>
       </root>
