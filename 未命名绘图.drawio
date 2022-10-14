@@ -1,49 +1,49 @@
-<mxfile host="app.diagrams.net" modified="2022-10-11T09:59:43.456Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="tUc4vz-tFjNTsqLzyjvc" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-14T06:15:29.693Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="eL8AWU4JGkqKTArAuEIl" version="20.4.0" type="github">
   <diagram id="v4NcV1EOcFVTRIT4R_Up" name="第 1 页">
-    <mxGraphModel dx="1865" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2041" dy="641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="l84PdnCawKySDigee48M-1" value="handleBtnPress" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-1" value="handleBtnPress" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="310" y="250" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-2" value="void StateMachine::handleBtnPress(EM_TVM_UI_STATUS curPage, QString objectName, int value, EM_TVM_UI_STATUS dst)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-2" value="void StateMachine::handleBtnPress(EM_TVM_UI_STATUS curPage, QString objectName, int value, EM_TVM_UI_STATUS dst)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="230" y="310" width="730" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-3" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;direction=south;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-3" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;direction=south;" parent="1" vertex="1">
           <mxGeometry x="600" y="300" width="300" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-4" value="//UI触发状态机&#xa;typedef struct&#xa;{&#xa;    QString objectName;&#xa;    int value;&#xa;    EM_TVM_UI_STATUS dst;&#xa;}ST_UI_EVENT;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-4" value="//UI触发状态机&#xa;typedef struct&#xa;{&#xa;    QString objectName;&#xa;    int value;&#xa;    EM_TVM_UI_STATUS dst;&#xa;}ST_UI_EVENT;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="680" y="180" width="190" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-5" value="EventStateMachine" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-5" value="EventStateMachine" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="320" y="390" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-8" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;shape=mxgraph.arrows2.arrow;dy=0.36;dx=32.4;notch=0;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-8" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;shape=mxgraph.arrows2.arrow;dy=0.36;dx=32.4;notch=0;" parent="1" vertex="1">
           <mxGeometry x="220" y="360" width="60" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-10" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;/*! \fn&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; bool EventStateMachine(EM_EVENT_TYPE emType, ST_UI_EVENT stUIEvent, const char *pJsonData, EM_TVM_UI_STATUS emInStatus, EM_TVM_UI_STATUS *emOutStatuss);&lt;/span&gt;&lt;/blockquote&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \brief 		从core收到数据后执行状态机。&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; emType入口类型&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; 	emEvent 入口事件&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; stIpcMsgData IPC数据&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; 	emInStatus 入口状态&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[out]	emOutStatus 执行状态机后状态&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \return		bool :true 表示已处理该时间&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \author 		薛峰&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \date 		2014－10－19&lt;br&gt;&amp;nbsp; &amp;nbsp; */" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-10" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;/*! \fn&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; bool EventStateMachine(EM_EVENT_TYPE emType, ST_UI_EVENT stUIEvent, const char *pJsonData, EM_TVM_UI_STATUS emInStatus, EM_TVM_UI_STATUS *emOutStatuss);&lt;/span&gt;&lt;/blockquote&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \brief   从core收到数据后执行状态机。&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; emType入口类型&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp;  emEvent 入口事件&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; stIpcMsgData IPC数据&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp;  emInStatus 入口状态&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[out] emOutStatus 执行状态机后状态&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \return  bool :true 表示已处理该时间&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \author   薛峰&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \date   2014－10－19&lt;br&gt;&amp;nbsp; &amp;nbsp; */" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="315" y="420" width="560" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-11" value="bool StateMachine::ExeStateUIEvent(ST_UI_EVENT stUIEvent, EM_TVM_UI_STATUS emInStatus, EM_TVM_UI_STATUS *emOutStatus)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-11" value="bool StateMachine::ExeStateUIEvent(ST_UI_EVENT stUIEvent, EM_TVM_UI_STATUS emInStatus, EM_TVM_UI_STATUS *emOutStatus)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-160" y="610" width="560" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-12" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="270" y="450" as="sourcePoint" />
             <mxPoint x="160" y="595" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-13" value="//处理UI按钮跳转" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-13" value="//处理UI按钮跳转" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-160" y="590" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-15" value="if(stUIEvent.objectName == &quot;BtnLarge&quot;)//放大按钮" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-15" value="if(stUIEvent.objectName == &quot;BtnLarge&quot;)//放大按钮" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-110" y="660" width="300" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-16" value="&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;例如:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-16" value="&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;例如:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-210" y="640" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-17" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="850" y="470" as="sourcePoint" />
             <mxPoint x="953" y="610" as="targetPoint" />
@@ -52,53 +52,59 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-18" value="string strCommand = m_pVirtulUI-&gt;GetCommand(pJsonData)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-18" value="string strCommand = m_pVirtulUI-&gt;GetCommand(pJsonData)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="875" y="610" width="360" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-19" value="if(0 == strcmp(strCommand.c_str(),CORE_TO_VIRTUAL_UI_COMMAND_HEARTBEAT))      //心跳" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-19" value="if(0 == strcmp(strCommand.c_str(),CORE_TO_VIRTUAL_UI_COMMAND_HEARTBEAT))      //心跳" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="875" y="635" width="560" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-20" value="&lt;br&gt;例如:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-20" value="&lt;br&gt;例如:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="825" y="620" width="50" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-21" value="先" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-21" value="先" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="830" y="610" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-22" value="connect(this, SIGNAL(btnPressed(EM_TVM_UI_STATUS,QString,int,EM_TVM_UI_STATUS)), m_pMachine,&#xa;            SLOT(handleBtnPress(EM_TVM_UI_STATUS,QString,int,EM_TVM_UI_STATUS)), Qt::QueuedConnection);" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-22" value="connect(this, SIGNAL(btnPressed(EM_TVM_UI_STATUS,QString,int,EM_TVM_UI_STATUS)), m_pMachine,&#xa;            SLOT(handleBtnPress(EM_TVM_UI_STATUS,QString,int,EM_TVM_UI_STATUS)), Qt::QueuedConnection);" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="40" width="560" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-23" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-23" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="369.5" y="140" as="sourcePoint" />
             <mxPoint x="369.5" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-24" value="TVMBase *m_FornCH[UI_FORM_COUNT];" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-24" value="TVMBase *m_FornCH[UI_FORM_COUNT];" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="310" y="870" width="270" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-25" value="#include &quot;uimanagement.h&quot;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-25" value="#include &quot;uimanagement.h&quot;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="340" y="830" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-26" value="//更新当前显示界面&lt;br&gt;void UIManagement::refreshView(EM_TVM_UI_STATUS emStatus, EM_TVM_UI_REFRESH_TYPE emType, QString btnName, int iValue, int bReflushAll)&lt;br&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="315" y="910" width="560" height="80" as="geometry" />
+        <mxCell id="l84PdnCawKySDigee48M-26" value="//更新当前显示界面&lt;br&gt;void UIManagement::refreshView(EM_TVM_UI_STATUS emStatus, EM_TVM_UI_REFRESH_TYPE emType, QString btnName, int iValue, int bReflushAll)&lt;br&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="315" y="1080" width="560" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-27" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.92;dx=35.4;notch=0;" vertex="1" parent="1">
-          <mxGeometry x="315" y="970" width="60" height="20" as="geometry" />
+        <mxCell id="l84PdnCawKySDigee48M-27" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.92;dx=35.4;notch=0;" parent="1" vertex="1">
+          <mxGeometry x="315" y="1140" width="60" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-28" value="if(emStatus&gt;=0 &amp;&amp; emStatus &lt; UI_FORM_COUNT)&#xa;        {&#xa;            m_FornCH[emStatus]-&gt;refreshUI(emType,btnName,iValue);&#xa;            if(bReflushAll)&#xa;                m_FornEN[emStatus]-&gt;refreshUI(emType,btnName,iValue);&#xa;        }" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="960" width="400" height="110" as="geometry" />
+        <mxCell id="l84PdnCawKySDigee48M-28" value="if(emStatus&gt;=0 &amp;&amp; emStatus &lt; UI_FORM_COUNT)&#xa;        {&#xa;            m_FornCH[emStatus]-&gt;refreshUI(emType,btnName,iValue);&#xa;            if(bReflushAll)&#xa;                m_FornEN[emStatus]-&gt;refreshUI(emType,btnName,iValue);&#xa;        }" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="1130" width="400" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-29" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-29" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-40" y="685" as="sourcePoint" />
             <mxPoint x="300" y="930" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-30" value="//状态机通知界面显示某一个界面&#xa;    connect(m_pMachine, SIGNAL(setView(int)), this, SLOT(showView(int)), Qt::QueuedConnection);" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="315" y="1099" width="560" height="70" as="geometry" />
+        <mxCell id="l84PdnCawKySDigee48M-30" value="//状态机通知界面显示某一个界面&#xa;    connect(m_pMachine, SIGNAL(setView(int)), this, SLOT(showView(int)), Qt::QueuedConnection);" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-360" y="910" width="560" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-35" value="EventStateMachine(EM_EVENT_TYPE_UI,  stUI,  NULL, m_emCurrentStatus,&amp;m_emStatusReturn );" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="l84PdnCawKySDigee48M-35" value="EventStateMachine(EM_EVENT_TYPE_UI,  stUI,  NULL, m_emCurrentStatus,&amp;m_emStatusReturn );" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="300" y="345" width="560" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ETHRLqlxkjIjxUWYg9xR-1" value="//状态机通知界面收到IPC消息 刷新某一界面&#xa;    qRegisterMetaType&lt;EM_TVM_UI_STATUS&gt;(&quot;EM_TVM_UI_STATUS&quot;);&#xa;    qRegisterMetaType&lt;EM_TVM_UI_REFRESH_TYPE&gt;(&quot;EM_TVM_UI_REFRESH_TYPE&quot;);&#xa;&#xa;&#xa;    connect(m_pMachine, SIGNAL(refreshView(EM_TVM_UI_STATUS,EM_TVM_UI_REFRESH_TYPE,QString,int,int)),&#xa;            this, SLOT(refreshView(EM_TVM_UI_STATUS,EM_TVM_UI_REFRESH_TYPE,QString,int,int)), Qt::QueuedConnection);" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="910" width="560" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ETHRLqlxkjIjxUWYg9xR-2" value="void UIManagement::showView(int viewIndex)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-350" y="1000" width="280" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
