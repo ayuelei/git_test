@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-19T10:04:50.095Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="baUdoqqy14soJNBp73Vm" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-21T02:56:18.962Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="M86c2SEN_LtcI5TRcIA7" version="20.4.1" type="github">
   <diagram id="v4NcV1EOcFVTRIT4R_Up" name="第 1 页">
-    <mxGraphModel dx="1888" dy="416" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2105" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -22,8 +22,8 @@
         <mxCell id="l84PdnCawKySDigee48M-8" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;shape=mxgraph.arrows2.arrow;dy=0.36;dx=32.4;notch=0;" parent="1" vertex="1">
           <mxGeometry x="220" y="360" width="60" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="l84PdnCawKySDigee48M-10" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;/*! \fn&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; bool EventStateMachine(EM_EVENT_TYPE emType, ST_UI_EVENT stUIEvent, const char *pJsonData, EM_TVM_UI_STATUS emInStatus, EM_TVM_UI_STATUS *emOutStatuss);&lt;/span&gt;&lt;/blockquote&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \brief   从core收到数据后执行状态机。&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; emType入口类型&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp;  emEvent 入口事件&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; stIpcMsgData IPC数据&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp;  emInStatus 入口状态&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[out] emOutStatus 执行状态机后状态&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \return  bool :true 表示已处理该时间&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \author   薛峰&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \date   2014－10－19&lt;br&gt;&amp;nbsp; &amp;nbsp; */" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="315" y="420" width="560" height="180" as="geometry" />
+        <mxCell id="l84PdnCawKySDigee48M-10" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;/*! \fn&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; bool EventStateMachine(EM_EVENT_TYPE emType, ST_UI_EVENT stUIEvent, const char *pJsonData, EM_TVM_UI_STATUS emInStatus, EM_TVM_UI_STATUS *emOutStatuss);&lt;/span&gt;&lt;/blockquote&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \brief   从core收到数据后执行状态机。&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; emType入口类型&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp;  emEvent 入口事件&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp; stIpcMsgData IPC数据&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[in]&amp;nbsp;  emInStatus 入口状态&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \param[out] emOutStatus 执行状态机后状态&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;* \return  bool :true 表示已处理该时间&lt;br&gt;&amp;nbsp; &amp;nbsp; */" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="315" y="420" width="560" height="150" as="geometry" />
         </mxCell>
         <mxCell id="l84PdnCawKySDigee48M-11" value="bool StateMachine::ExeStateUIEvent(ST_UI_EVENT stUIEvent, EM_TVM_UI_STATUS emInStatus, EM_TVM_UI_STATUS *emOutStatus)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-160" y="610" width="560" height="50" as="geometry" />
@@ -53,16 +53,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="l84PdnCawKySDigee48M-18" value="string strCommand = m_pVirtulUI-&gt;GetCommand(pJsonData)" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="875" y="610" width="360" height="40" as="geometry" />
+          <mxGeometry x="946" y="655" width="360" height="40" as="geometry" />
         </mxCell>
         <mxCell id="l84PdnCawKySDigee48M-19" value="if(0 == strcmp(strCommand.c_str(),CORE_TO_VIRTUAL_UI_COMMAND_HEARTBEAT))      //心跳" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="875" y="635" width="560" height="50" as="geometry" />
+          <mxGeometry x="946" y="680" width="560" height="50" as="geometry" />
         </mxCell>
         <mxCell id="l84PdnCawKySDigee48M-20" value="&lt;br&gt;例如:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="825" y="620" width="50" height="40" as="geometry" />
+          <mxGeometry x="896" y="665" width="50" height="40" as="geometry" />
         </mxCell>
         <mxCell id="l84PdnCawKySDigee48M-21" value="先" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="830" y="610" width="40" height="30" as="geometry" />
+          <mxGeometry x="901" y="655" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="l84PdnCawKySDigee48M-22" value="connect(this, SIGNAL(btnPressed(EM_TVM_UI_STATUS,QString,int,EM_TVM_UI_STATUS)), m_pMachine,&#xa;            SLOT(handleBtnPress(EM_TVM_UI_STATUS,QString,int,EM_TVM_UI_STATUS)), Qt::QueuedConnection);" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="40" width="560" height="80" as="geometry" />
